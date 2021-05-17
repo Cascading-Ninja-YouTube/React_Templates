@@ -1,0 +1,37 @@
+@import './fonts.css';
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html
+
+{
+    scroll-behavior: smooth;
+}
+.row
+{
+    margin: 0 !important;
+}
+i
+{
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (min-width:800px)
+{
+    .main
+    {
+        margin-left: 350px;
+        flex: 1;
+        
+        min-height: 100vh;
+        height: auto;
+    }
+}
+.blogHead
+{
+    margin-top: 10vh;
+}
