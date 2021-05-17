@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TABI | The Best Trip Planner for you</title>
+  <link rel="shortcut icon" href="Images/TabiLogo1.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="gallery.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+
+
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<main id="main">
+		<div class="top">
+	
+				<div class="left">
+					<div class="address">
+						<span class="fa fa-map-marker"></span>
+						47/1 ABC lane, Location Y, City-009110
+					</div>
+					<div class="phone">
+						<span class="fa fa-phone"></span>
+						+91 - 891-xxxx-xxx
+					</div>
+					<div class="social">
+            <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-instagram"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a>
+
+					</div>
+				</div>
+				<div class="right">
+					<div class="signin">
+						<a href="#">Sign In</a>
+					</div>
+					<div class="register">
+						<a href="#">Register</a>
+					</div>
+				</div>
+			</div>
+	
+		<div id="nav">
+		
+				<div class="left">
+			
+						<a href="index.html"class="logo"><img src="images/TabiLogo1.png" style="filter: invert();"></a>
+						<div class="topnav" id="myTopnav">
+              <div class="closebtn" id="closebtn" onclick="closeNav()">&times;</div>
+						  <a href="#home" class="active">Home</a>
+						  <a href="#about">About</a>
+						  <a href="#gallery">Gallery</a>
+						  <a href="#events">Events</a>
+						  <a href="#contact">Contact</a>
+              <div class="nav-para">Tabi <i>(japanese for travel)</i> is a vacation organizing agency, aimed at providing you with the best trip experience at your leisure.</div>
+              <div class="nav-copyright">©Tabi tourism 2021</div>	
+            </div>
+       
+              <div class="hamMenu " id="hamMenu" onclick="openNav()">
+              <div class="hamBar" style="width: 25px;"></div>
+              <div class="hamBar " ></div>
+              <div class="hamBar " style="width: 20px;"></div>
+						  </div>
+              
+            	
+			
+			</div>
+		</div>
+<section class="banner" id="home">
+
+      <div class=" col-xs-7 col-md-offset-1">
+        <div class="banner-caption">
+          <div class="line-dec"></div>
+          <h2>Your Ultimate Trip Planner</h2>
+          <span>Be it a soul searching trek or a vacation with dear ones, Tabi is your one stop destination to plan it out.</span>
+          <div class="blue-button landing-button"><a href="javascript:void(0);">Discover More</a></div>
+        </div>
+        <div class="submit-form">
+          <form id="form-submit" action="#" method="post">
+            <div class="row">
+              <div class="col-md-3 first-item">
+                <fieldset>
+                  <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                </fieldset>
+              </div>
+              <div class="col-md-3 second-item">
+                <fieldset>
+                  <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required>
+                </fieldset>
+              </div>
+              <div class="col-md-3 third-item">
+                <fieldset>
+                  <select  name="category" onchange="this.form()">
+                    <option value="" >Select category...</option>
+                    <option value="Solo Trip">Solo Trip</option>
+                    <option value="Group Vacation">Group Vacation</option>
+                    <option value="Staycation">Staycation</option>
+                    <option value="Abroad Vacation">Abroad Vacation</option>
+                    <option value="Medical travel">Medical travel</option>
+                    <option value="Tabi specials">Tabi specials</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-md-3 fourth-item">
+                <fieldset>
+                  <select  name="category" onchange="this.form()">
+                    <option value="">Select Budget...</option>
+                    <option value=" < Rs.5000 "> < Rs.5000 </option>
+                    <option value="Rs.5000- Rs.20000">Rs.5000- Rs.20000</option>
+                    <option value="Rs. 20000 - Rs. 50000">Rs. 20000 - Rs. 50000</option>
+                    <option value="Rs. 50000 - Rs. 75000">Rs. 50000 - Rs. 75000</option>
+                    <option value=" > Rs.750000"> > Rs.750000</option>
+               
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-md-3 first-item">
+                <fieldset class="row" style="display: flex; align-items: center;">
+                
+                  <input placeholder="   Staring Date" type="text" onfocus="(this.type = 'date')"  id="date-start">
+                </fieldset>
+              </div>
+              <div class="col-md-3 second-item">
+                <fieldset class="row" style="display: flex; align-items: center;">
+                
+                  <input placeholder="   Ending Date" type="text" onfocus="(this.type = 'date')"  id="date-end">
+                </fieldset>
+              </div>
+              <div class="col-md-3 third-item">
+                <fieldset>
+                  <select  name="category" onchange="this.form()">
+                    <option value="" >Preferred Travel Mode</option>
+                    <option value="Roadways ">Roadways </option>
+                    <option value="Airways">Airways</option>
+                    <option value="Railways">Railways</option>
+                    
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-md-3">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="btn"> <img src="images/plan.svg" alt="">Plan your trip</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+     
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container-fluid">
+    <div class="row aboutDetails">
+      <div class="col-md-12">
+        <div class="section-heading"><span>About Us</span>
+          <h2>What is Tabi</h2>
+        </div>
+        <div class="aboutPara">
+         
+           <p>Tabi <i>(japanese for travel)</i> is a vacation organizing agency, aimed at providing you with the best trip experience at your leisure. Donot worry about hotels, tickets or any hassle. Tabi organizes your entire trip and shares all details with you beforehand. </p>
+           <p>
+             So, take a seat back and let us handle the hassle. We offer the best of lodgings, cuisine and aim to provide the best vacation you ever had. 
+           </p>
+          
+        </div>
+      </div>
+    </div>
+    
+</section>
+
+<section class="popular-places" id="gallery">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading"><span>Popular Places</span>
+          <h2>Gallery of the best places we cater</h2>
+        </div>
+      </div>
+    </div>
+    
+    <div class="rowimg"> 
+      <div class="column">
+        <img src="https://images.pexels.com/photos/2040627/pexels-photo-2040627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="masonryimg">
+        <img src="https://images.pexels.com/photos/3225529/pexels-photo-3225529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="masonryimg">
+        <img src="https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="masonryimg">
+        
+       
+      </div>
+      <div class="column">
+        <img src="https://images.pexels.com/photos/2827374/pexels-photo-2827374.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="masonryimg">
+        <img src="https://images.pexels.com/photos/1154638/pexels-photo-1154638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="masonryimg">
+        <img src="https://images.pexels.com/photos/1056497/pexels-photo-1056497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="masonryimg">
+       
+      </div>  
+      <div class="column">
+        <img src="https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="masonryimg">
+        <img src="https://images.unsplash.com/photo-1533850595620-7b1711221751?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1114&q=80" class="masonryimg">
+        <img src="https://images.unsplash.com/photo-1519055548599-6d4d129508c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="masonryimg">
+        <img src="https://images.unsplash.com/photo-1516685304081-de7947d419d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" class="masonryimg">
+       
+      </div>
+      <div class="column">
+        <img src="https://images.unsplash.com/photo-1592388748465-8c4dca8dd703?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="masonryimg">
+        <img src="https://images.pexels.com/photos/2870167/pexels-photo-2870167.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="masonryimg">
+        <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" class="masonryimg">
+       
+      </div>
+    </div>
+
+
+  </section>
+
+<section class="featured-places" id="events">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading"><span>Upcoming Events</span>
+          <h2>Embark on a journey with our expert guides</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+        <div class="featured-item">
+          <div class="thumb"><img src="https://images.pexels.com/photos/7086913/pexels-photo-7086913.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="website template image">
+            <div class="overlay-content">
+              <ul>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+            </div>
+            <div class="date-content">
+              <h6>28</h6>
+              <span>October</span></div>
+          </div>
+          <div class="down-content">
+            <h4>Manali Group Trek</h4>
+            <span>Solo- Group Trekking</span>
+            <p>Join us on your group trekk to the wonderous valley of Manali. Guided by local expert Mr. Ravi Shrivastava, feel the wonderous healing of the Himalayas calm your soul </p>
+            <div class="row">
+              <div class="col-md-6 first-button">
+                <div class="favourites text-button"><a href="#">Book this trip</a></div>
+              </div>
+              <div class="col-md-6">
+                <div class="text-button"><a href="#">Continue Reading</a></div>
+              </div>
+            </div>
+          </div>
+      </div>
+	</div>
+	<div class="col-lg-4 col-sm-6 col-xs-12">
+        <div class="featured-item">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1586940740260-acecfc29c180?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="website template image">
+            <div class="overlay-content">
+              <ul>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+          
+              </ul>
+            </div>
+            <div class="date-content">
+              <h6>20</h6>
+              <span>September</span></div>
+          </div>
+          <div class="down-content">
+            <h4>Goa Group Trip</h4>
+            <span>Solo-Group Vacation</span>
+            <p>Visit the wonderful beaches of Goa and relax on the beaches with your friends. Grab a drink and watch peacefully as the sun sets into the horizon. </p>
+            <div class="row">
+              <div class="col-md-6 first-button">
+                <div class="favourites text-button"><a href="#">Book this trip</a></div>
+              </div>
+              <div class="col-md-6">
+                <div class="text-button"><a href="#">Continue Reading</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+        <div class="featured-item">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1052&q=80" alt="website template image">
+            <div class="overlay-content">
+              <ul>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+            </div>
+            <div class="date-content">
+              <h6>12</h6>
+              <span>October</span></div>
+          </div>
+          <div class="down-content">
+            <h4>Romantic Paris Trip</h4>
+            <span>Abroad Vacation</span>
+            <p>Visit the romantic city of Paris with your beloved and rejuvenate your soul once more. Security assured with our all time available representative.</p>
+            <div class="row">
+              <div class="col-md-6 first-button">
+                <div class="favourites text-button"><a href="#">Book this trip</a></div>
+              </div>
+              <div class="col-md-6">
+                <div class="text-button"><a href="#">Continue Reading</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="our-services" id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading"><span>Our Services</span>
+          <h2>How we make your trip better</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 ">
+        <div class="service-item">
+          <div class="icon"><img src="Images/destination.svg" alt="website template image"></div>
+          <h4>Pre planned vacation</h4>
+          <p>All trips are planned ahead and discussed with you. Totally customizable and modelled for your leisure</p></p>
+        </div>
+      </div>
+       <div class="col-md-3 ">
+        <div class="service-item">
+          <div class="icon"><img src="Images/luggage.svg" alt="website template image"></div>
+          <h4>Security Assurance</h4>
+          <p>All our services are secured. Insurances assured for any damage under our surveillance</p>
+        </div>
+      </div>
+      <div class="col-md-3 ">
+        <div class="service-item">
+          <div class="icon"><img src="Images/bank.svg" alt="website template image"></div>
+          <h4>Value for Money</h4>
+          <p>You'll get the full value for the money you spend with us. Quality assured services ensured</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 ">
+        <div class="service-item">
+          <div class="icon"><img src="Images/helpline.svg" alt="website template image"></div>
+          <h4>24*7 Helpline</h4>
+          <p>Our 24*7 helpline services are available for you, in case of any need.</p>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+</section>
+
+<section class="pricing-tables">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading"><span>Pricing Tables</span>
+          <h2>Become a Partner with us</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="table-item">
+          <div class="top-content">
+            <h4>Starter Plan</h4>
+            <h1>$20</h1>
+            <span>/monthly</span></div>
+          <ul>
+            <li><a href="#">30% discount on all hotel stays in your city*</a></li>
+            <li><a href="#">10% discount voucher on cab services each month</a></li>
+            <li><a href="#">10% discount on all grocery shopping from XYZ store</a></li>
+            
+            
+          </ul>
+          <div class="blue-button"><a href="#">Get Starter Plan</a></div>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="table-item">
+          <div class="top-content">
+            <h4>Premium Plan</h4>
+            <h1>$45</h1>
+            <span>/monthly</span></div>
+          <ul>
+            <li><a href="#">40% discount on all hotel stays in your city*</a></li>
+            <li><a href="#">30% discount voucher on cab services each month</a></li>
+            <li><a href="#">20% discount on all grocery shopping from XYZ store</a></li>
+            
+            
+          </ul>
+          <div class="blue-button"><a href="#">Get Premium Plan</a></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="table-item">
+          <div class="top-content">
+            <h4>Diamond Plan</h4>
+            <h1>$85</h1>
+            <span>/monthly</span></div>
+          <ul>
+            <li><a href="#">1 night free stay at any hotel in your city</a></li>
+            <li><a href="#">40% discount voucher on cab services each month</a></li>
+            <li><a href="#">30% discount on all grocery shopping from XYZ store</a></li>
+            
+            
+          </ul>
+          <div class="blue-button"><a href="#">Get Diamond Plan</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="note" style="color: #837979;">* hotels affiliated with us only applicable</div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+	<div class="container">
+    	<h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+    	<form action="#">
+    		<input type="Email" placeholder="Email Address" autocomplete="off" class="email-holder col-md-6">
+    		<input type="submit" class="subscribe">
+    	</form>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="about-footer">
+          <div class="footer-logo"><img src="images/TabiLogo1.png" alt="website template image"></div>
+          <p>Tabi <i>(japanese for travel)</i> is a vacation organizing agency, aimed at providing you with the best trip experience at your leisure. Donot worry about hotels, tickets or any hassle. Tabi organizes your entire trip and shares all details with you beforehand.</p>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-instagram"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="useful-links">
+          <div class="footer-heading">
+            <h4>Useful Links</h4>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <ul>
+                <li><a href="#"><i class="fa fa-stop"></i>Help FAQs</a></li>
+                <li><a href="#"><i class="fa fa-stop"></i>Register</a></li>
+                <li><a href="#"><i class="fa fa-stop"></i>Login</a></li>
+                <li><a href="#"><i class="fa fa-stop"></i>My Profile</a></li>
+                <li><a href="#"><i class="fa fa-stop"></i>How It Works?</a></li>
+                <li><a href="#"><i class="fa fa-stop"></i>More About Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <li><a href="#"><i class="fa fa-stop"></i>Our Clients</a></li>
+                <li><a href="#"><i class="fa fa-stop"></i>Partnerships</a></li>
+                <li><a href="#"><i class="fa fa-stop"></i>Blog Entries</a></li>
+                <li><a href="#"><i class="fa fa-stop"></i>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="contact-info">
+          <div class="footer-heading">
+            <h4>Contact Information</h4>
+          </div>
+          <p>Find us here:</p>
+          <ul class="footer-contact">
+            <li><span>Phone:</span><a href="#">+91 891-xxx-xxxx</a></li>
+            <li><span>Email:</span><a href="#">info@tabi.com</a></li>
+            <li><span>Address:</span><a href="#">47/1 ABC LANE, LOCATION Y, <br/> CITY-009110</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="sub-footer">
+  <p>© Tabi tourism 2021</p>
+</div>
+  </main>
+
+  <script>
+    var myTopnav= document.getElementById('myTopnav');
+    var hamMenu= document.getElementById('hamMenu');
+    var closebtn= document.getElementById('closebtn');
+    var nav = document.getElementById('nav')
+    function openNav()
+    {
+      myTopnav.classList.add('open');
+      hamMenu.style.display='none';
+    }
+    function closeNav()
+    {
+      myTopnav.classList.remove('open');
+      hamMenu.style.display="flex";
+    }
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("hamMenu").style.background = "#000";
+
+
+  } else {
+    document.getElementById("hamMenu").style.background = "transparent";
+
+
+  }
+}
+  </script>
+</body>
+</html>
