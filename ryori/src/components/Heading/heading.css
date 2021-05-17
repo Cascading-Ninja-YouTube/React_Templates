@@ -1,0 +1,45 @@
+
+.headingDiv,.heading
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headingDiv
+{
+    flex-direction: column;
+}
+.heading
+{
+    text-align: center;
+    font-family: 'Barlow',sans-serif;
+    text-transform: uppercase;
+    color: rgb(70, 68, 68);
+    font-size: 4vh;
+    margin:20px 0;
+    margin-top: 30px;
+   
+}
+.heading::before,.heading::after
+{
+    content: 'x';
+    text-transform: lowercase;
+    margin: 0 15px;
+    font-size: 20px;
+}
+.HeadingWrapper .headingPara
+{
+    width: 60%;
+    text-align: center;
+    max-width: 80vw;
+    margin: 20px auto;
+    color: rgb(107, 105, 105);
+    font-family: 'Barlow',sans-serif;
+}
+@media screen and (max-width:800px) {
+    .HeadingWrapper .headingPara
+    {
+        width: 100%;
+    }
+    
+}

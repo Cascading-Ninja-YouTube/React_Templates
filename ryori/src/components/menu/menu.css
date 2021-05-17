@@ -1,0 +1,99 @@
+.menuMain
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+.menuWrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+.menuHeading
+{
+    font-family: 'Poppins',sans-serif;
+    font-size: 21px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: rgb(201, 13, 13);
+    text-align: center;
+}
+.menuItem
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menuItemDetails
+{
+    font-family: 'Poppins',sans-serif;
+    color: rgb(85, 81, 85);
+    font-size: 15px;
+    margin: 10px 0;
+    max-width: 70%;
+}
+.menuItemDetails h5
+{
+    font-weight: bolder;
+    color: #000;
+}
+.menuItemPrice
+{
+    color: rgb(201, 13, 13);
+    font-family: 'Eagle Lake',sans-serif;
+}
+.menuSection,.menuList
+{
+    margin-top: 20px;
+}
+.menuBtn
+{
+    width:fit-content;
+    max-width: 80vw;
+    margin: 0 auto;
+    border: 1px solid rgb(201, 13, 13);
+   
+    background: transparent;
+    color: rgb(201, 13, 13);
+    font-size: 20px;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: 0.5s ease;
+    border-radius: 5px;
+}
+
+.menuBtn:hover
+{ 
+    background:rgb(201, 13, 13);
+    color: #fff;
+   
+}
+
+.menuLanding
+
+{
+    background:url(https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=980&q=80tps://images.pexels.com/photos/3421920/pexels-photo-3421920.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) rgba(17, 17, 17, 0.61);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.menuPageHeadingImage
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -30px;
+}
+.menuPageHeadingImage img
+{
+    width: 60vh;
+}

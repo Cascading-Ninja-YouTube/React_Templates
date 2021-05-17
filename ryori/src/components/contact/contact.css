@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #010712;
+    --secondary-color: #818386;
+    --bg-color: #FCFDFD;
+    --button-color: #3B3636;
+    --h1-color: #3F444C;
+  }
+  
+
+  .contactWrapper
+  {
+      max-width: 80vw;
+      margin: 0 auto;
+      min-height: 70vh;
+      padding-top: 40px 0;
+     
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 70vh;
+    background: var(--bg-color);
+    padding:0 ;
+    margin-top: 20px !important;
+  }
+  
+  .left-col img {
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  
+  .right-col {
+    background: var(--bg-color);
+    width: 50vw;
+    height: 100vh;
+    padding: 5rem 3.5rem;
+  }
+  
+ label, button {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
+ 
+
+  label{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 0.625rem;
+  }
+  
+  form {
+    width: 70%;
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem 0;
+  }
+  
+  input, textarea, label {
+    width: 100%;
+    display: block;
+  }
+  
+::placeholder, input, textarea {
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: var(--primary-color);
+  }
+  
+  input, textarea {
+    color: var(--primary-color);
+    font-weight: 500;
+    background: var(--bg-color);
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    text-transform: uppercase;
+    font-weight: 300;
+    background: var(--button-color);
+    color: var(--bg-color);
+    width: 10rem;
+    height: 2.25rem;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  input:hover, textarea:hover, button:hover {
+    opacity: 0.5;
+  }
+  
+  button:active {
+    opacity: 0.8;
+  }
+  
+ 
+  
+  @media only screen and (max-width: 950px) {
+  
+    input, textarea, button {
+      font-size: 0.65rem;
+    }
+   
+    button {
+      width: 7rem;
+    }
+    
+  }
+  .contactLanding
+
+  {
+      background:url(https://images.pexels.com/photos/734562/pexels-photo-734562.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) rgba(17, 17, 17, 0.61);
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: darken;
+  }
+  .contactDetail
+  {
+    font: 21px 'Barlow',sans-serif;
+    text-align: center;
+    margin: 15px 0;
+  }

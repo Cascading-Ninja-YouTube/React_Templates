@@ -1,0 +1,73 @@
+.parallaxDiv
+{
+    min-height: 60vh;
+    /* background: url(https://images.pexels.com/photos/670705/pexels-photo-670705.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) rgba(17, 17, 17, 0.637); */
+    background: url(https://images.pexels.com/photos/3297882/pexels-photo-3297882.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) rgba(17, 17, 17, 0.637);
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    padding: 50px 0;
+    color: #fff;
+    font-family: 'Barlow',sans-serif;
+}
+.parallaxHeading
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+}
+.parallaxHeading h2
+{
+    font-size: 40px;
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+}
+.parallaxHeading img
+{
+    width: 50px;
+    margin:0  30px ;
+    transform: rotate(-90deg);
+}
+.parallaxHeading img:last-of-type
+{
+    transform: rotate(90deg);
+}
+.parallaxspan
+{
+    color: rgb(201, 13, 13);
+}
+.parallaxHours
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.openinghour
+{
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Eagle Lake',cursive;
+    font-size: 30px;
+
+}
+.openingDay
+{
+    text-align: center;
+    color: rgb(221, 17, 17);
+}
+.openingTime
+{
+    font-family: 'Barlow','Alegreya sans',sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-top: 30px;
+}
