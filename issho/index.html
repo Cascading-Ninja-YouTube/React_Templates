@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/util.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/rsvp.css">
+
+    <title>Ishho | Save the date </title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+<section class="nav w-fscreen flex">
+    <div class="hamMenu" onclick="openNav()" ><span></span></div>
+    <span class="logo">Issho</span>
+    <div class="menu" id="menu">
+        <a href="javascript:void(0)" id="closeBtn" onclick="closeNav()">&times;</a>
+        <a href="#top"onclick="closeNav()">Home</a>
+        <a href="#bride&bride"onclick="closeNav()">Bride & Bride</a>
+        <a href="#story"onclick="closeNav()">Our Story</a>
+        <a href="#family"onclick="closeNav()">Loved ones</a>
+        <a href="#events"onclick="closeNav()">Events</a>
+        <a href="#rsvp"onclick="closeNav()">Rsvp</a>
+        <a href="#gallery"onclick="closeNav()">Gallery</a>
+    </div>
+</section>
+
+<!-- LANDING PAGE -->
+    <section class="landing w-fscreen h-fscreen" id="top">
+        <div class="landingText flexCol center">
+            <img src="images/ring.png" alt="ring" class="landingImg">
+            <div class="landingDetail flexCol center" >
+                <h3>The Wedding of</h3>
+                <h1>Alicia & Emily</h1>
+            </div>
+           <div class="timer flex">
+               <div class="days flexCol center">
+                   <span id="days"></span>
+                    <span>Days</span>
+               </div>
+
+            <div class="hours flexCol center">
+                <span id="hours"></span>
+                 <span>Hours</span>
+            </div>
+
+            <div class="minutes flexCol center">
+                <span id="minutes"></span>
+                 <span>Minutes</span>
+            </div>
+
+            <div class="second flexCol center">
+                <span id="seconds"></span>
+                 <span>Seconds</span>
+            </div>
+
+
+           </div>
+        </div>
+    </section>
+
+<!-- INVITATION -->
+<div class="sectionHeading flex center">
+    <div class="complementoryFont sectionHeadingDivs" >Invitation</div>
+    <div class="primaryFont sectionHeadingDivs" >You're Invited</div>
+</div> 
+<section class=" row  invitation flex center" style="margin-left: 0; margin-right: 0;" id="invite">
+    <!-- <div class="invitationImage col-md-4 flex center"> -->
+    <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="wedding photo " class="col-md-4 invitationImage">
+<!-- </div> -->
+    <div class="invitationCard flexCol col-md-4 col-sm-12">
+<div class="cardTop">
+    Join us to celebrate <br> <span>The holy matrimony of</span>
+</div>
+<div class="cardTitle flexCol center">
+    <h3>Alicia & Emily</h3>
+    <img src="images/ring.png" alt="">
+</div>
+<div class="cardDescription">
+    <span>Celebration on</span>
+    <div class="cardDate"><span>Jan</span> <span>22</span> <span>2022</span></div>
+    <div>Starting at 1300 hrs <br> St. Pauls Cathedral</div>
+</div>
+    </div>
+</section>
+
+<!-- BRIDE AND BRIDE -->
+<section class="brides flexCol" id="bride&bride">
+  <div class="sectionHeading flex center">
+      <div class="complementoryFont sectionHeadingDivs">Bride and Bride</div>
+      <div class="primaryFont sectionHeadingDivs"> Bride & Bride</div>
+  </div>  
+
+  <div class="brideRow row flex" style="margin-left: 0; margin-right: 0;">
+    <div class="brideRowDiv  col-md-4">
+        <div class="brideDiv flexCol center">
+            <img src="https://images.pexels.com/photos/3769614/pexels-photo-3769614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bride 1" class="brideImg">
+            <div class="brideName">Alicia Hartman</div>
+            <div class="brideDetails">Emily has been a great influence in my life. From supporting me through my dark times, loving me at my lowest, to helping me with everything. I'm grateful to have met such a lovely person and I feel complete when I am with her. I  hope everyone makes it to our wedding and make it a wonderful day for the both of us.</div>
+            <div class="brideQuote">"Once in a while, right in the middle of an ordinary, love gives us a fairy tale."</div>
+        </div>
+    </div>
+    <div class="brideRowDiv  col-md-4">
+        <div class="brideDiv flexCol center">
+            <img src="https://images.pexels.com/photos/792725/pexels-photo-792725.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bride 1" class="brideImg">
+            <div class="brideName">Emily Abernathy</div>
+            <div class="brideDetails">Alicia has always been there by my side through thick and thin. As her partner and as her friend, I can say that if I hadn't met Alicia, I wouldn't have discovered my purpose of life. Caring for her, being there with her, feels the best. I request you all to attend our wedding, and make it a memorable day for us. </div>
+            <div class="brideQuote">"Once in a while, right in the middle of an ordinary, love gives us a fairy tale."</div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline flexCol" id="story">
+    <div class="sectionHeading flex center">
+        <div class="complementoryFont sectionHeadingDivs">How I met your Mother</div>
+        <div class="primaryFont sectionHeadingDivs">Our Story</div>
+    </div>  
+    <div class="wrapper">
+        <div class="center-line">
+         
+          <!-- <a href="#" class="scroll-icon"><i class="fa fa-caret-up"></i></a> -->
+        </div>
+        <div class="row row-1">
+          <section>
+           <img src="https://images.pexels.com/photos/5241772/pexels-photo-5241772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="timelineImg icon">
+            <div class="details">
+              <span class="title">How We Met</span>
+              <span class="timelineDate">21<sup>st</sup> Aug 2014</span>
+            </div>
+            <p>It was a rainy day back in freshman year when we crashed into each other trying to avoid the rain. And we hated each other for a few weeks.</p>
+            <div class="bottom">
+             
+                <i>- Alicia</i>
+              </div>
+          </section>
+        </div>
+        <div class="row row-2">
+          <section>
+              <img src="https://images.pexels.com/photos/821054/pexels-photo-821054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="timelineImg icon">
+            <div class="details">
+              <span class="title">The Icebreaker Date</span>
+              <span class="timelineDate">2<sup>nd</sup> Oct 2014</span>
+            </div>
+            <p>We became friends a few weeks later, primarily being in the same class. We liked each other. One day we were laughing on something ridiculous ( i don't even remember). Suddenly she says that we should totally go out together. I agreed instantly without even thinking.</p>
+            <div class="bottom">
+             
+              <i>- Emily</i>
+            </div>
+          </section>
+        </div>
+        <div class="row row-1">
+          <section>
+              <img src="https://images.pexels.com/photos/3693861/pexels-photo-3693861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="timelineImg icon">
+            <div class="details">
+              <span class="title">The Committment</span>
+              <span class="timelineDate">10<sup>th</sup> Jan 2015</span>
+            </div>
+            <p>I told Emily that I loved her. It was established already, but no one said it formally before. And sad part is it was over a video call. She was away at her folks, and I was in hostel dorm. I miss those good ol' days.</p>
+            <div class="bottom">
+             
+              <i>- Alicia</i>
+            </div>
+          </section>
+        </div>
+        <div class="row row-2">
+          <section>
+              <img src="https://images.pexels.com/photos/6437099/pexels-photo-6437099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="timelineImg icon">
+            <div class="details">
+              <span class="title">We're Engaged</span>
+              <span class="timelineDate">10<sup>th</sup> Jan 2020</span>
+            </div>
+            <p>I decided to ask her to marry me on the Celebration of our 5th anniversary. It kind of went south, as I was faking to ignore her for a few weeks only to surprise her. In the end, it blew up in my face. She figured out the plan and asked me first. We were both crying for 20 mins straight.</p>
+            <div class="bottom">
+             
+              <i>- Emily</i>
+            </div>
+          </section>
+        </div>
+        <div class="row row-1">
+          <section>
+              <img src="https://images.pexels.com/photos/3727554/pexels-photo-3727554.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="timelineImg icon">
+            <div class="details">
+              <span class="title">Wife & Wife</span>
+              <span class="timelineDate">22 <sup>st</sup> Jan 2022</span>
+            </div>
+            <p>So Hey, Join us. We're getting married. Celebrate this day with us and bless us with a long, healthy and lovely journey ahead. Save the date !</p>
+            <div class="bottom">
+             
+              <i>- Alicia & Emily</i>
+            </div>
+          </section>
+        </div>
+      
+      </div>
+</section>
+
+<!-- FAMILY AND FRIENDS -->
+<section class="family flexCol" id="family">
+
+  <section id="cards">
+    <div class="container py-2">
+      <div class="sectionHeading flex center">
+        <div class="complementoryFont sectionHeadingDivs">Loved ones</div>
+        <div class="primaryFont sectionHeadingDivs">Family & Friends</div>
+    </div>  
+        <!-- cards -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="user-picture">
+                            <img src="https://images.pexels.com/photos/2389349/pexels-photo-2389349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="shadow-sm rounded-circle" height="130" width="130" />
+                        </div>
+                        <div class="user-content">
+                            <h5 class="text-capitalize user-name">Olivia </h5>
+                            <p class=" text-capitalize text-muted small blockquote-footer">Maid of Honor</p>
+                           
+                            <p class="small text-muted mb-0">I've been their friend since college and to think that they made it this far makes me way too happy. I wish them a wonderful journey ahead.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="user-picture">
+                            <img src="https://images.pexels.com/photos/3739059/pexels-photo-3739059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="shadow-sm rounded-circle" height="130" width="130" />
+                        </div>
+                        <div class="user-content">
+                            <h5 class="text-capitalize user-name">Eveline</h5>
+                            <p class=" text-capitalize text-muted small blockquote-footer">Maid of Honor</p>
+                           
+                            <p class="small text-muted mb-0">I knew Emily since her high school days. When she introduced me to Alicia, I knew that they would be lovely together, and now here we are, celebrating their matrimony. May God keep blessing them.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="user-picture">
+                            <img src=https://images.pexels.com/photos/1030900/pexels-photo-1030900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="shadow-sm rounded-circle" height="130" width="130" />
+                        </div>
+                        <div class="user-content">
+                            <h5 class="text-capitalize user-name">Lois</h5>
+                            <p class=" text-capitalize text-muted small blockquote-footer">Ring Bearer</p>
+                         
+                            <p class="small text-muted mb-0">Alicia is my cousin and to be their ring bearer, fills me up with great pride and joy. I wish them a lovely journey ahead of them and may God bless them. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="user-picture">
+                            <img src=https://images.pexels.com/photos/698848/pexels-photo-698848.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="shadow-sm rounded-circle" height="130" width="130" />
+                        </div>
+                        <div class="user-content">
+                            <h5 class="text-capitalize user-name">Georgina</h5>
+                            <p class=" text-capitalize text-muted small blockquote-footer">Bridesmaid</p>
+                            
+                            <p class="small text-muted mb-0">Emily and Alicia have been such great friends to me, being there by my side, supporting me through everything, I just wish them loads and loads of happiness and prosperity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="user-picture">
+                            <img src="https://images.pexels.com/photos/1838582/pexels-photo-1838582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="shadow-sm rounded-circle" height="130" width="130" />
+                        </div>
+                        <div class="user-content">
+                            <h5 class="text-capitalize user-name">Mia</h5>
+                            <p class=" text-capitalize text-muted small blockquote-footer">Bridesmaid</p>
+                           
+                            <p class="small text-muted mb-0">I've been working with Emily for almost two years now, and in that time, my life has been touched by her. Alicia has been a good friend to me as well. I wish them the best for their life ahead.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="user-picture">
+                            <img src="https://images.pexels.com/photos/654692/pexels-photo-654692.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="shadow-sm rounded-circle" height="130" width="130" />
+                        </div>
+                        <div class="user-content">
+                            <h5 class="text-capitalize user-name">Petra</h5>
+                            <p class=" text-capitalize text-muted small blockquote-footer">Bridesmaid</p>
+                          
+                            <p class="small text-muted mb-0">I met the two of them at a book club and have been friends since then. They are such a sweet couple and so caring. I wish them happiness and all the luck on their journey ahead.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+ 
+</section>
+
+<!-- CEREMONIES -->
+<section class="ceremonies" id="events">
+  <div class="sectionHeading flex center">
+    <div class="complementoryFont sectionHeadingDivs">ceremonies</div>
+    <div class="primaryFont sectionHeadingDivs">Events</div>
+</div>  
+<div class=" row ceremonyCardDivRow flex" style="margin-left: 0;margin-right: 0;">
+    <div class="ceremonyCard col-md-3 reception flexCol">     
+    <img src="images/reception.png" alt="reception bell" class="ceremonyIcon">
+    <h3 class="ceremonyName">The Reception</h3>
+    <div class="ceremonyTime"> <span>Saturday, 28, 2019<span> <br><span>02:00 pm-10:00 pm</span></div>
+    <h4 class="ceremonyAddress">203 Fake St. Mountain View, San Francisco, California, USA</h4>
+    <a href="https://goo.gl/maps/S2R6LaLzH69rseqf6" target="_blank" rel="noopener noreferrer"class="ceremonyBtn">Locate on map</a>
+    </div>
+
+    <div class="ceremonyCard col-md-3 wedding flexCol">     
+        <img src="images/wedding.png" alt="reception bell" class="ceremonyIcon">
+        <h3 class="ceremonyName">The Wedding</h3>
+        <div class="ceremonyTime"> <span>Saturday, 28, 2019<span> <br><span>02:00 pm-10:00 pm</span></div>
+        <h4 class="ceremonyAddress">203 Fake St. Mountain View, San Francisco, California, USA</h4>
+        <a href="https://goo.gl/maps/S2R6LaLzH69rseqf6" target="_blank" rel="noopener noreferrer"class="ceremonyBtn">Locate on map</a>
+    </div>
+    <div class="ceremonyCard col-md-3 party flexCol">     
+        <img src="images/party.png" alt="reception bell" class="ceremonyIcon">
+        <h3 class="ceremonyName">The Party</h3>
+        <div class="ceremonyTime"> <span>Saturday, 28, 2019<span> <br><span>02:00 pm-10:00 pm</span></div>
+        <h4 class="ceremonyAddress">203 Fake St. Mountain View, San Francisco, California, USA</h4>
+        <a href="https://goo.gl/maps/S2R6LaLzH69rseqf6" target="_blank" rel="noopener noreferrer"class="ceremonyBtn">Locate on map</a>
+    </div>
+</div>
+</section>
+
+
+<!-- RSVP -->
+<section class="rsvp flexCol center" id="rsvp">
+    <div class="sectionHeading flex center">
+        <div class="complementoryFont sectionHeadingDivs">RSVP</div>
+        <div class="primaryFont sectionHeadingDivs">Will you attend ?</div>
+    </div>  
+    <section class="main">
+        
+        <section class=" featureForm">
+        
+            <form class="gform" action="#" method="POST">
+                <div class="name" id="floating-label-wrap">
+                    <label for="name"></label>
+                    <input type="text" placeholder="My name is" name="name" id="name_input" required>
+                </div>
+                <div class="email" id="floating-label-wrap">
+                    <label for="email"></label>
+                    <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+                </div>
+                <div class="telephone" id="floating-label-wrap">
+                    <label for="telephone"></label>
+                    <input type="text" placeholder="My number is " name="telephone" id="telephone_input" required>
+                </div>
+                <div class="subject" id="floating-label-wrap">
+                    <label for="Guest"> </label>
+                    <select placeholder="Subject line" name="subject" id="subject_input" required>
+                  <option disabled hidden selected>How many guests are you bringing?</option>
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  
+                </select>
+                </div>
+                <div class="message" id="floating-label-wrap">
+                    <label for="message"></label>
+                    <textarea name="message" placeholder="Say congrats !!" id="message_input" cols="25" rows="5"></textarea>
+                </div>
+               
+                <div class="submit">
+                    <button value="Send Message" id="form_button" onclick="alert('Your request is being processed, please stay on the page till you see another popup-box or a message. Thank You!'); document.querySelector(`.thankyou_message`).style.display='block'">I'll be attending !</button>
+
+                </div>
+                <div style="display:none" class="thankyou_message">
+                    <h2 id="demo" style="color: rgb(0, 0, 0); margin-top: 40px;">Thank you for rsvp-ing. We'll get back to you shortly.</h2>
+                </div>
+
+            </form>
+        </section>
+     
+    </section>
+</section>
+
+<!-- REGISTRY -->
+<section class="registry">
+    <div class="sectionHeading flex center">
+        <div class="complementoryFont sectionHeadingDivs">Gifts</div>
+        <div class="primaryFont sectionHeadingDivs">Registry</div>
+    </div>  
+    <div class="row registryImgDiv" style="margin-right: 0;margin-left: 0;">
+    <div class="">
+    <img src="https://www.brides.com/thmb/OA20nRZxfh4CB5u5A6RCpVBSQko=/1231x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Zola-3da80f99283b488a80f938bf71f0f689.png" alt="" class="registryimg">
+    </div>
+    <div class="">
+    <img src="https://www.brides.com/thmb/Y3OW-f1TIwVw6UaZ-HAZkqu9OFE=/1054x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/My_Registry-f7dd531e8e04473ea9352967363c68bb.png" alt="" class="registryimg">
+    </div>
+    <div class="">
+    <img src="https://www.brides.com/thmb/qhRW8WJTsor1FZv6S4H3UKYQR0w=/1526x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Blue_Print_Registry-e10586a1749c4e0e95a6d0aaf6bae2ef.png" alt="" class="registryimg">
+    </div>
+    <div class="">
+    <img src="https://www.brides.com/thmb/usvxg04iWzEGaTZ0rTrx5hfW3Mg=/1430x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/amazon-60458c9550484cdb84aab9269b098d31.png" alt="" class="registryimg">
+    </div>
+    <div class="">
+    <img src="https://www.brides.com/thmb/7pM3HfSdlhZuaLpv4cD7RJrOuy0=/2274x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Target-629e8dc64738475ebb71d7f0be1d33f5.png" alt="" class="registryimg">
+    </div>
+    <div class="">
+    <img src="https://www.brides.com/thmb/aqs6IqLcqhGYh7o-56WasBTyJwg=/2190x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Bed_bath_and_Beyond-8e14394110fa49a78d640f2e71f85427.png" alt="" class="registryimg">
+    </div>
+    <div class="">
+    <img src="https://www.brides.com/thmb/3IrMB3AHnPFFcBtP1-7mDiytRPU=/1920x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Macys-0dd1e8e04640481d824da24896dface2.png" alt="" class="registryimg">
+    </div>
+    <div class="">
+    <img src="https://www.brides.com/thmb/yWWBmsLnRO8NS1BGGMjqcUbx2QU=/1462x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Pottery_Barn-4b025c8038254a69bae3a570c10bb87f.png" alt="" class="registryimg">
+    </div>
+  
+</div>
+</section>
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+    <div class="sectionHeading flex center">
+        <div class="complementoryFont sectionHeadingDivs">Gallery</div>
+        <div class="primaryFont sectionHeadingDivs">Capturing the events</div>
+    </div> 
+    <div class="row"> 
+        <div class="column">
+          <img src="https://images.pexels.com/photos/759668/pexels-photo-759668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+          <img src="https://images.pexels.com/photos/2788488/pexels-photo-2788488.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+          <img src="https://images.pexels.com/photos/2922312/pexels-photo-2922312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+         
+        </div>
+        <div class="column">
+          <img src="https://images.pexels.com/photos/389663/pexels-photo-389663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+          <img src="https://images.pexels.com/photos/2253866/pexels-photo-2253866.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+          <img src="https://images.pexels.com/photos/313707/pexels-photo-313707.jpeg?cs=srgb&dl=pexels-terje-sollie-313707.jpg&fm=jpg" style="width:100%">
+
+        </div>  
+        <div class="column">
+        
+          <img src="https://images.pexels.com/photos/3592892/pexels-photo-3592892.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="width:100%">
+          <img src="https://images.pexels.com/photos/3014858/pexels-photo-3014858.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+     
+        </div>
+        <div class="column">
+         
+          <img src="https://images.pexels.com/photos/341372/pexels-photo-341372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+          <img src="https://images.pexels.com/photos/1114425/pexels-photo-1114425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+          <img src="https://images.pexels.com/photos/355063/pexels-photo-355063.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+       
+        </div>
+      </div>
+    </section>
+<!-- FOOTER -->
+<footer>
+    <div class="footer">
+      <div class="footer_about col-md-3">
+        <h3>Save The Date</h3>
+        <p>Join us on the holy matrimony of Alicia Hartman & Emily Abernathy. Save the date, enjoy the day, and bless them on their life ahead.</p>
+      </div>
+      <div class="footer_main col-md-3">
+        <h3>Quick Start</h3>
+      
+        <a href="#top">Home</a>
+        <a href="#bride&bride">Bride & Bride</a>
+        <a href="#story">Our Story</a>
+        <a href="#family">Loved ones</a>
+        <a href="#events">Events</a>
+        <a href="#rsvp">Rsvp</a>
+        <a href="#gallery">Gallery</a>
+    
+      </div>
+      <div class="footer_right col-md-3">
+          <h3>Follow us on</h3>
+        <div class="footer_links">
+         <img src="images/facebook.png" alt="">
+         <img src="images/instagram.png" alt="">
+         <img src="images/twitter.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+    Designed and Developed by Cascading Ninja.
+    </div>
+  </footer>
+<script src="js/script.js"></script>
+
+
+
+</body>
+</html>

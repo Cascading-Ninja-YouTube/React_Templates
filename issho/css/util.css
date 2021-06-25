@@ -1,0 +1,80 @@
+.h-fscreen
+{
+    min-height: 100vh;
+}
+.w-fscreen
+{
+width: 100vw;
+}
+.flex
+{
+    display: flex;
+}
+.flexCol
+{
+    display: flex;
+    flex-direction: column;
+}
+.center
+{
+    align-items: center;
+    justify-content: center;
+}
+.center-top
+{
+    align-items: flex-start;
+    justify-content: center;
+}
+.text-white
+{
+    color: #fff;
+}
+.sectionHeading
+{
+    margin: 10vw 0;
+}
+.sectionHeadingDivs
+{
+    position: absolute;
+    text-align: center;
+   
+}
+
+.complementoryFont
+{
+font: 6vh var(--serif-font);
+opacity: 0.1;
+font-weight: bolder;
+text-transform: uppercase;
+}
+.primaryFont
+{
+    font: 10vh var(--primary-font);
+    color: var(--primary-color);
+}
+@media screen and (max-width:480px) {
+    .primaryFont
+    {
+        font-size: 8vh;
+    }
+    .sectionHeading
+    {
+        margin: 10vh 0;
+    }
+}
+.carousel{
+    width:90%;
+    margin:0px auto;
+  }
+  .slick-slide{
+    margin:10px;
+  }
+  .slick-slide img{
+    width:100%;
+    border: 2px solid #fff;
+  }
+  .wrapper .slick-dots li button:before {
+    font-size:20px;
+    color:white;
+  }
+
