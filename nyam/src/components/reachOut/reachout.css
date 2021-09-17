@@ -1,0 +1,34 @@
+.ReachOutSection
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5vh 10vw;
+    background: var(--primary);
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    font-size: 4vh;
+    text-align: center;
+}
+.ReachOutSection>*
+{
+    display: grid;
+    place-items: center;
+}
+.reachOutButton
+{
+border-radius: 50px;
+border: 2px solid #fff;
+padding: 12px 40px;
+font-size: 21px;
+font-weight: 600;
+cursor: pointer;
+margin-top: 22px;
+}
+.reachOutButton:hover
+{
+    background: #fff;
+    color:var(--primary);
+    transition: 0.5s ease;
+}

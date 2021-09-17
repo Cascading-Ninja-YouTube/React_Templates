@@ -1,0 +1,112 @@
+.ServiceSection
+{
+    display: grid;
+    place-items: center;
+}
+.serviceCardWrapper
+{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.serviceCard
+{
+/* width: 25%; */
+min-height: 500px;
+border: 2px solid transparent;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+padding: 20px 0;
+margin: 20px;
+cursor: pointer;
+transition: 0.5s ease;
+box-shadow: var(--boxShadow) 0px 4px 12px;
+}
+
+.serviceCard img
+{
+    width: 30%;
+    height: auto;
+    min-height: 100px;
+}
+.serviceCardDetail
+{
+    width: 90%;
+    margin: 0 auto;
+    color: gray;
+}
+.serviceCardTitle
+{
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    margin: 15px 0;
+}
+.serviceButton
+{
+    margin: 12px 0;
+    background: transparent;
+    color: inherit;
+}
+
+
+.serviceCardWrapper .react .serviceCardTitle
+{
+    color: #42b7ca;
+}
+
+.serviceCardWrapper .react:hover
+{
+    border: 2px solid#42b7ca;
+    
+}
+.serviceCardWrapper .react .serviceButton
+{   border: 1px solid;
+    color: #42b7ca;
+}
+.serviceCardWrapper .react .serviceButton:hover
+{
+    background-color: #42b7ca;
+    color: #fff;
+}
+.serviceCardWrapper .node .serviceCardTitle
+{
+    color: #42ca54;
+}
+
+.serviceCardWrapper .node:hover
+{
+    border: 2px solid#42ca54;
+}
+.serviceCardWrapper .node .serviceButton
+{   border: 1px solid;
+    color: #42ca54;
+}
+.serviceCardWrapper .node .serviceButton:hover
+{
+    background-color: #42ca42;
+    color: #fff;
+}
+.serviceCardWrapper .server .serviceCardTitle
+{
+    color: #ebb215;
+}
+
+.serviceCardWrapper .server:hover
+{
+    border: 2px solid#ebb215;
+}
+.serviceCardWrapper .server .serviceButton
+{   border: 1px solid;
+    color: #ebb215;
+}
+.serviceCardWrapper .server .serviceButton:hover
+{
+    background-color: #ebb215;
+    color: #fff;
+}

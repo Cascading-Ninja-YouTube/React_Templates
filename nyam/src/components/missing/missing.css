@@ -1,0 +1,15 @@
+#missingVideo
+{
+    /* margin-top: 40px; */
+    margin: 0 auto;
+}
+.videoDiv
+{   margin-top:70px;
+    display: grid;
+    place-items: center;
+}
+.missingImage
+{
+    max-width: 90vw;
+    margin: 0 auto;
+}
