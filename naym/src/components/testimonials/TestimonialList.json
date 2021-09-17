@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "name":"Chandler Bing",
+        "designation":"Founder",
+        "quote":"Really Helpful people here, glad to have worked with them lot.",
+        "image":"https://images.pexels.com/photos/5528835/pexels-photo-5528835.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+        "id":2,
+        "name":"Rachel Green",
+        "designation":"HR ",
+        "quote":"Easy to understand and work with.",
+        "image":"https://images.pexels.com/photos/5386358/pexels-photo-5386358.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+        "id":3,
+        "name":"Monica Geller",
+        "designation":"HR ",
+        "quote":"Beautiful interactions, and before deadline submissions",
+        "image":"https://images.pexels.com/photos/1457611/pexels-photo-1457611.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+        "id":4,
+        "name":"Ross Geller",
+        "designation":"Professor ",
+        "quote":"Best in the business.",
+        "image":"https://images.pexels.com/photos/1220757/pexels-photo-1220757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+]
